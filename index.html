@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Molkov Dmitry</title>
+
+  <link rel="icon" type="image/svg" href="resources/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+  <script defer src="js/app.js"></script>
+  <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+
+<body>
+
+  <header class="header main-header">
+  <div class="container header__container">
+
+    <div class="for-burger">
+      <button class="burger-btn" id="burger">
+        <span class="burger-btn__line burger-btn__line_top"></span>
+        <span class="burger-btn__line burger-btn__line_middle"></span>
+        <span class="burger-btn__line burger-btn__line_bottom"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item close-nav">
+            <button class="close-burger" id="close-burger">
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#diplomas" class="nav__link">Дипломы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Мои работы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link about-link link-svg">
+              О себе
+              <svg>
+                <use xlink:href="img/sprite.svg#leftArr"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="tel:+375292248249" class="nav__link link-svg">
+              <svg>
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              +37529&nbsp;224-82-49</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <a class="logo" href="">
+      <img class="container-img" src="img/logo.svg" alt="MD">
+    </a>
+
+    <a href="resources/Мольков Дмитрий_Резюме.pdf" class="btn" download="Мольков Дмитрий_Резюме.pdf">
+      Резюме в PDF
+    </a>
+  </div>
+</header>
+
+
+  <main>
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container hero-container">
+        <div class="hero__grid common-grid">
+          <div class="hero__left">
+            <div class="hero__left_content">
+              <h1 class="hero__title">
+                <span class="hero__subtitle" id="greeting">Здравствуйте!</span>
+                Меня зовут Дмитрий, <br> и я начинающий web&#8209;разработчик
+              </h1>
+            </div>
+          </div>
+          <div class="hero__right right">
+            <img src="img/hero/photo.png" alt="Мое фото" class="contain-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container skills__container">
+        <h2 class="section-heading skills__heading">Мои навыки</h2>
+        <ul class="skills__grid common-grid skills__list">
+          <li class="skills__item">
+            <div class="progress" id="progHTML"></div>
+            <span class="skills__title">HTML5</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progCSS"></div>
+            <span class="skills__title">CSS3</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progSCSS"></div>
+            <span class="skills__title">SCSS</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progGULP"></div>
+            <span class="skills__title">GULP</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progGIT"></div>
+            <span class="skills__title">GIT</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progBEM"></div>
+            <span class="skills__title">БЭМ</span>
+          </li>
+        </ul>
+        <div>
+          <p class="paragraph skills__paragraph">
+            Верстка макетов из Figma, Photoshop.<br>
+            Реализация Pixel Perfect.<br>
+            Адаптивная и кроссбраузерная верстка. Доступность.<br>
+            <br>
+            В ближайшем будушем начну глубже осваивать javascript, фреймворк react.js, а также английский язык
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIPLOMAS -->
+
+    <section class="section diplomas" id="diplomas">
+      <div class="container diplomas__container">
+        <h2 class="section-heading diplomas__heading">Дипломы</h2>
+        <div class="swiper" id="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide_first swiper-slide">
+              <img src="img/diplomas/myit.jpg" alt="Диплом" class="contain-img">
+            </div>
+            <div class="swiper-slide_second swiper-slide">
+              <img src="img/diplomas/skill.jpg" alt="Диплом" class="contain-img">
+            </div>
+            <div class="swiper-slide_third swiper-slide">
+              <img src="img/diplomas/success.jpg" alt="Диплом" class="contain-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="section projects" id="projects">
+      <div class="container projects__container">
+        <h2 class="section-heading projects__heading">Мои работы</h2>
+        <ul class="projects__grid common-grid">
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/Blanch/" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/blanchard.jpg" alt="Blanchard" class="cover-img projects__img">
+            <!-- <div class="projects__box btn-box">
+              <button class="btn">Скачать zip</button>
+            </div> -->
+            <div class="projects__box btn-box">
+              <a href="resources/Blanchard.rar" class="btn" download="Blanchard.rar">
+                Скачать архив
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/HighPass/" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/highpass.jpg" alt="HighPass" class="cover-img projects__img">
+            <!-- <div class="projects__box btn-box">
+              <button class="btn">Скачать zip</button>
+            </div> -->
+            <div class="projects__box btn-box">
+              <a href="resources/HighPass.rar" class="btn" download="HighPass.rar">
+                Скачать архив
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+  <div class="container footer__container">
+    <ul class="mail list-links">
+      <li>
+        <a href="mailto:dmitrymolkov28@gmail.com" class="footer__link">dmitrymolkov28@gmail.com</a>
+      </li>
+      <li>
+        <a href="mailto:navernoye28@gmail.com" class="footer__link">navernoye28@gmail.com</a>
+      </li>
+    </ul>
+
+    <ul class="numbers list-links">
+      <li>
+        <a href="tel:+375292248249" class="footer__link link-svg">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +37529&nbsp;224-82-49
+        </a>
+      </li>
+    </ul>
+
+    <ul class="social list-links">
+      <li class="social__item">
+        <a href="viber://chat?number=%2B375292248249" class="social__link" target="_blank">
+          <svg>
+            <use xlink:href="img/sprite.svg#vb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://t.me/navernoyeDima" class="social__link" target="_blank">
+          <svg>
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://wa.me/375257844941" class="social__link" target="_blank">
+          <svg>
+            <use xlink:href="img/sprite.svg#wa"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
