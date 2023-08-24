@@ -1,0 +1,232 @@
+@import "../vars";
+@import "../mixins";
+@import "../fonts";
+
+.header {
+  background: $mainColor;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    padding: 48px 30px 30px 55px;
+    left: calc(50% - 100px);
+    top: -25px;
+    width: 200px;
+    height: 200px;
+    background: $mainColor;
+    z-index: 5;
+    border-radius: 50%;
+  }
+}
+
+.header-about {
+  .logo {
+    position: relative;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+  }
+}
+
+.for-burger {
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 45px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    z-index: 10;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .burger-btn:focus-visible .burger-btn__line {
+    background-color: $btnFocus;
+    width: 100%;
+  }
+
+  .burger-btn__line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: $btnColor;
+    transition-property: color, width, transform, opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+  }
+
+  .burger-btn__line_middle {
+    width: 75%;
+  }
+
+  .burger-btn__line_bottom {
+    width: 50%;
+  }
+
+  .burger-btn:hover .burger-btn__line {
+    width: 100%;
+    background-color: $btnHover;
+  }
+
+  .burger-btn:active .burger-btn__line {
+    width: 100%;
+    background-color: $btnActive;
+  }
+
+  .nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    background: $mainColor;
+    transform: translateY(-200%);
+    transition-property: visibility, transform;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+    visibility: hidden;
+    z-index: 10;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+    }
+
+    &__item {
+      z-index: 10;
+    }
+
+    .close-nav {
+      position: absolute;
+      left: calc(50% - 100px);
+      top: -25px;
+      width: 200px;
+      height: 200px;
+      background: $mainColor;
+      z-index: 8;
+      border-radius: 50%;
+      z-index: 7;
+
+      .close-burger {
+        position: absolute;
+        bottom: 30px;
+        left: 80px;
+        width: 40px;
+        height: 40px;
+        padding: 3px;
+        border: none;
+        border-radius: 50%;
+        background-color: $btnColor;
+        transition: background-color .3s ease;
+        cursor: pointer;
+
+        svg {
+          height: 100%;
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: $btnHover;
+        }
+
+        &:focus-visible {
+          background-color: $btnFocus;
+        }
+
+        &:active {
+          background-color: $btnActive;
+        }
+      }
+    }
+  }
+
+  .is_active_nav {
+    visibility: visible;
+    transform: none;
+  }
+}
+
+.nav {
+  &__link {
+    font-family: $secondFont, sans-serif;
+    color: $secondColor;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $linkHover;
+    }
+
+    &:active {
+      color: $linkActive;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+      z-index: -1;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible::before {
+      background-color: $linkFocus;
+    }
+  }
+}
+
+.link-main {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.about-link {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    margin-left: 5px;
+    transform: rotate(180deg);
+  }
+}
