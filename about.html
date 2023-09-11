@@ -15,7 +15,7 @@
       <div class="container about__container">
         <h2 class="section-heading about__heading">Кратко обо мне</h2>
         <p class="paragraph about__paragraph">
-          Как вы уже поняли, меня зовут Дмитрий, мне 33 года.
+          Как вы уже поняли, меня зовут Дмитрий, мне <span id="age">(in JS)</span> года.
           Родом из славного города Бреста, что на юго-западе Беларуси.<br>
           Являюсь мужем прекрасной девушки, отцом трех веселых мальчишек,
           а также хозяином шерстяного кота (правда он считает иначе).<br>
@@ -30,20 +30,34 @@
       </div>
     </section>
 
+    <section class="presentation">
+      <div class="container presentation__container">
+        <div class="presentation__video">
+          <video controls poster="">
+            <source src="./resources/vid.mp4">
+          </video>
+          <div class="presentation__img">
+            <img src="img/about/look.png" class="contain-img big-img" alt="me">
+            <img src="img/about/look-top.png" class="contain-img small-img" alt="me">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="photos">
       <div class="container photos__container">
         <div class="photos__box">
           <div class="photos__block leftop">
-
+            <!-- styles -->
           </div>
           <div class="photos__block rightop">
-
+            <!-- styles -->
           </div>
           <div class="photos__block lefbottom">
-
+            <!-- styles -->
           </div>
           <div class="photos__block righbottom">
-
+            <!-- styles -->
           </div>
         </div>
       </div>
@@ -53,16 +67,5 @@
   @@include('partials/footer.html')
 
 </body>
-
-<script>
-  document.querySelector('.photos__box').addEventListener('click', function (event) {
-    if (event.target.classList.contains('photos__block')) {
-      document.querySelectorAll('.photos__block').forEach(function(e) {
-        e.classList.toggle('sub-act');
-      })
-      event.target.classList.toggle('block-act');
-    }
-  });
-</script>
 
 </html>
