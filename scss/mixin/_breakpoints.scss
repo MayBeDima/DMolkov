@@ -5,7 +5,12 @@
 }
 
 @mixin big-desktop {
-  @media (max-width: (1440px)) {
+  @media (max-width: (1250px)) {
+    .about {
+      &__paragraph {
+        max-width: 700px;
+      }
+    }
   }
 }
 
@@ -13,7 +18,7 @@
   @media (max-width: (1024px)) {
     .hero {
       &__grid {
-        grid-auto-rows: 600px;
+        grid-auto-rows: 550px;
       }
     }
 
@@ -21,6 +26,18 @@
       .progress {
         height: 180px;
         width: 180px;
+      }
+    }
+
+    .about {
+      &__paragraph {
+        max-width: 600px;
+      }
+    }
+
+    .presentation {
+      &__img {
+        right: -360px;
       }
     }
   }
@@ -41,7 +58,7 @@
 
       .nav {
         width: 50%;
-        height: 580px;
+        height: 530px;
         top: 0;
         right: auto;
         padding: 15px 15px;
@@ -84,7 +101,7 @@
 
     .hero {
       &__grid {
-        grid-auto-rows: 500px;
+        grid-auto-rows: 450px;
       }
 
       &__left_content {
@@ -107,18 +124,37 @@
         position: relative;
       }
     }
+
+    .presentation {
+      padding-top: 180px;
+
+      &__img {
+        top: -200px;
+        right: 100px;
+        width: 400px;
+        height: 225px;
+
+        .small-img {
+          display: block;
+        }
+
+        .big-img {
+          display: none;
+        }
+      }
+    }
   }
 
   @media (max-width: (768px)) {
     .main-header {
       .nav {
-        height: 530px;
+        height: 480px;
       }
     }
 
     .hero {
       &__grid {
-        grid-auto-rows: 450px;
+        grid-auto-rows: 400px;
       }
 
       &__left_content {
@@ -141,6 +177,12 @@
         font-size: 16px;
       }
     }
+
+    .presentation {
+      &__video {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -148,13 +190,13 @@
   @media (max-width: (680px)) {
     .main-header {
       .nav {
-        height: 440px;
+        height: 420px;
       }
     }
 
     .hero {
       &__grid {
-        grid-auto-rows: 360px;
+        grid-auto-rows: 340px;
       }
 
       &__title {
@@ -351,6 +393,17 @@
             margin-bottom: 2px;
           }
         }
+      }
+    }
+
+    .presentation {
+      padding-top: 120px;
+
+      &__img {
+        top: -150px;
+        right: 0;
+        width: 290px;
+        height: 164px;
       }
     }
   }

@@ -2,10 +2,44 @@
 @import "../mixins";
 @import "../fonts";
 
+main {
+  overflow: hidden;
+}
+
 .about {
   &__paragraph {
     max-width: 800px;
     text-align: justify;
+  }
+}
+
+.presentation {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__video {
+    position: relative;
+    display: inline-block;
+    max-width: 650px;
+
+    video {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: -390px;
+    width: 774px;
+    height: 622px;
+    z-index: -1;
+
+    .small-img {
+      display: none;
+    }
   }
 }
 
@@ -71,12 +105,12 @@
     background-position: center center;
     filter: grayscale(1);
     transition-property: filter border transform;
-    transition-duration: .4s;
+    transition-duration: 0.4s;
     transition-timing-function: ease;
 
     &:hover {
       transform: scale(1.1);
-      border: 2px solid $mainColor;
+      border: 2px solid #2c6797;
       filter: none;
       z-index: 5;
     }
@@ -108,5 +142,3 @@
     }
   }
 }
-
-
