@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Molkov Dmitry</title>
+
+  <link rel="icon" type="image/svg" href="resources/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+
+
+<body>
+
+  <header class="header main-header">
+  <div class="container header__container">
+
+    <div class="for-burger">
+      <button class="burger-btn" id="burger">
+        <span class="burger-btn__line burger-btn__line_top"></span>
+        <span class="burger-btn__line burger-btn__line_middle"></span>
+        <span class="burger-btn__line burger-btn__line_bottom"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item close-nav">
+            <button class="close-burger" id="close-burger">
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link nav-js">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#diplomas" class="nav__link nav-js">Дипломы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link nav-js">Мои работы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link nav-js">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link about-link link-svg">
+              <span class="nav-js">О себе</span>
+              <svg>
+                <use xlink:href="img/sprite.svg#leftArr"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="tel:+375292248249" class="nav__link link-svg">
+              <svg>
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              +37529&nbsp;224-82-49</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <a class="logo" href="">
+      <img class="container-img" src="img/logo.svg" alt="MD">
+    </a>
+
+    <div class="header__right">
+      <div class="lang-box">
+        <button class="lang-btn" id="ru">ru</button>
+        <button class="lang-btn" id="en">en</button>
+      </div>
+
+
+      <a href="resources/Мольков Дмитрий_Резюме.pdf" class="btn resume" download="Мольков Дмитрий_Резюме.pdf">
+        Резюме в PDF
+      </a>
+    </div>
+
+  </div>
+</header>
+
+
+  <main>
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container hero-container">
+        <div class="hero__grid common-grid">
+          <div class="hero__left">
+            <div class="hero__left_content">
+              <h1 class="hero__title">
+                <span class="hero__subtitle" id="greeting">Здравствуйте!</span>
+                <span id="me">Меня зовут Дмитрий, <br> и я начинающий web&#8209;разработчик</span>
+              </h1>
+            </div>
+          </div>
+          <div class="hero__right right">
+            <img src="img/hero/photo.png" alt="Мое фото" class="contain-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container skills__container">
+        <h2 class="section-heading skills__heading">Мои навыки</h2>
+        <ul class="skills__grid common-grid skills__list">
+          <li class="skills__item">
+            <div class="progress" id="progHTML"></div>
+            <span class="skills__title">HTML5</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progCSS"></div>
+            <span class="skills__title">CSS3</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progSCSS"></div>
+            <span class="skills__title">SCSS</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progJS"></div>
+            <span class="skills__title">JS</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progREACT"></div>
+            <span class="skills__title">React</span>
+          </li>
+          <li class="skills__item">
+            <div class="progress" id="progGIT"></div>
+            <span class="skills__title">GIT</span>
+          </li>
+        </ul>
+        <div>
+          <p class="paragraph skills__paragraph">
+            Верстка макетов из Figma, Photoshop.<br>
+            Реализация Pixel Perfect.<br>
+            Адаптивная и кроссбраузерная верстка. Доступность.<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIPLOMAS -->
+
+    <section class="section diplomas" id="diplomas">
+      <div class="container diplomas__container">
+        <h2 class="section-heading diplomas__heading">Дипломы</h2>
+        <div class="swiper" id="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide_first swiper-slide">
+              <img src="img/diplomas/myit.jpg" alt="Диплом" class="contain-img">
+            </div>
+            <div class="swiper-slide_second swiper-slide">
+              <img src="img/diplomas/skill.jpg" alt="Диплом" class="contain-img">
+            </div>
+            <div class="swiper-slide_third swiper-slide">
+              <img src="img/diplomas/success.jpg" alt="Диплом" class="contain-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="section projects" id="projects">
+      <div class="container projects__container">
+        <h2 class="section-heading projects__heading">Мои работы</h2>
+        <ul class="projects__grid common-grid">
+          <!-- Blanchard -->
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/Blanch/" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/blanchard.jpg" alt="Blanchard" class="cover-img projects__img">
+            <div class="projects__box btn-box">
+              <a href="https://github.com/MayBeDima/Blanch" class="btn sourse-btn" target="_blank">
+                Исходники на Github.
+              </a>
+            </div>
+            <div class="projects__more" data-project="blanch">
+              <div class="more-btn" data-project="blanch">
+                <span class="more-text">Подробнее</span>
+              </div>
+              <div class="more-description">
+                <div class="more-description-block">
+                  <p class="more-description-title project-title">Название</p>
+                  <p class="more-description-item project-name">Blanchard. Художественная галерея</p>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-title technologies">Технологии</p>
+                  <ul class="more-description-item more-description-list">
+                    <li>Верстка по макету Figma</li>
+                    <li>CSS Flexbox</li>
+                    <li>CSS Flexbox</li>
+                    <li>Адаптивый дизайн</li>
+                    <li>Нативный JS с применением различных утилит</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- HighPass -->
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/HighPass/" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/highpass.jpg" alt="HighPass" class="cover-img projects__img">
+            <div class="projects__box btn-box">
+              <a href="https://github.com/MayBeDima/HighPass" class="btn sourse-btn" target="_blank">
+                Исходники на Github.
+              </a>
+            </div>
+            <div class="projects__more" data-project="high">
+              <div class="more-btn" data-project="high">
+                <span  class="more-text">Подробнее</span>
+              </div>
+              <div class="more-description">
+                <div class="more-description-block">
+                  <p class="more-description-title project-title">Название</p>
+                  <p class="more-description-item project-name">High Pass</p>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-title technologies">Технологии</p>
+                  <ul class="more-description-item more-description-list">
+                    <li>Верстка по макету Figma</li>
+                    <li>CSS Grid. SCSS.</li>
+                    <li>Pixel perfect</li>
+                    <li>Адаптивый дизайн</li>
+                    <li>Нативный JS с применением различных утилит</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- ToDo list -->
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/Todo/" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/todo.jpg" alt="Todo list" class="cover-img projects__img">
+            <div class="projects__box btn-box">
+              <a href="https://github.com/MayBeDima/Todo" class="btn sourse-btn" target="_blank">
+                Исходники на Github.
+              </a>
+            </div>
+            <div class="projects__more" data-project="toDo">
+              <div class="more-btn" data-project="toDo">
+                <span class="more-text">Подробнее</span>
+              </div>
+              <div class="more-description">
+                <div class="more-description-block">
+                  <p class="more-description-title project-title">Название</p>
+                  <p class="more-description-item project-name">ToDo list</p>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-title technologies">Технологии</p>
+                  <ul class="more-description-item more-description-list">
+                    <li>Адаптивый дизайн Bootstrap</li>
+                    <li>Нативный JS</li>
+                    <li>Использование локального хранилища</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Pairs -->
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/pairs/" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/pairs.jpg" alt="pairs" class="cover-img projects__img">
+            <div class="projects__box btn-box">
+              <a href="https://github.com/MayBeDima/pairs" class="btn sourse-btn" target="_blank">
+                Исходники на Github.
+              </a>
+            </div>
+            <div class="projects__more" data-project="pairs">
+              <div class="more-btn" data-project="pairs">
+                <span class="more-text">Подробнее</span>
+              </div>
+              <div class="more-description">
+                <div class="more-description-block">
+                  <p class="more-description-title project-title">Название</p>
+                  <p class="more-description-item project-name">Игра в пары</p>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-title technologies">Технологии</p>
+                  <ul class="more-description-item more-description-list">
+                    <li>Нативный JS</li>
+                    <li>Использование модулей</li>
+                  </ul>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-note">*только декстопная версия</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Find a number -->
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/Find-a-number/" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/findNumber.jpg" alt="findANumber" class="cover-img projects__img">
+            <div class="projects__box btn-box">
+              <a href="https://github.com/MayBeDima/Find-a-number" class="btn sourse-btn" target="_blank">
+                Исходники на Github.
+              </a>
+            </div>
+            <div class="projects__more" data-project="findANumber">
+              <div class="more-btn" data-project="findANumber">
+                <span class="more-text">Подробнее</span>
+              </div>
+              <div class="more-description">
+                <div class="more-description-block">
+                  <p class="more-description-title project-title">Название</p>
+                  <p class="more-description-item project-name">Игра "Найди число"</p>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-title technologies">Технологии</p>
+                  <ul class="more-description-item more-description-list">
+                    <li>Нативный JS</li>
+                    <li>JS modules</li>
+                    <li>Использование классов</li>
+                  </ul>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-note">*только декстопная версия</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Social demo -->
+          <li class="projects__item">
+            <div class="reverse">
+              <button class="reverse__btn">
+                <svg class="push">
+                  <use xlink:href="img/sprite.svg#leftRightArr"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="projects__box link-box">
+              <a href="https://maybedima.github.io/social/#/login" target="_blank" class="projects__link">Посмотреть</a>
+            </div>
+            <img src="img/projects/socialDemo.jpg" alt="social" class="cover-img projects__img">
+            <div class="projects__box btn-box">
+              <a href="https://github.com/MayBeDima/social/tree/gh-pages" class="btn sourse-btn" target="_blank">
+                Исходники на Github.
+              </a>
+            </div>
+            <div class="projects__more" data-project="social">
+              <div class="more-btn" data-project="social">
+                <span class="more-text">Подробнее</span>
+              </div>
+              <div class="more-description">
+                <div class="more-description-block">
+                  <p class="more-description-title project-title">Название</p>
+                  <p class="more-description-item project-name">Социальная сеть (demo)</p>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-title technologies">Технологии</p>
+                  <ul class="more-description-item more-description-list">
+                    <li>React JS</li>
+                    <li>Redux</li>
+                    <li>API. Axios</li>
+                    <li>CSS modules</li>
+                  </ul>
+                </div>
+                <div class="more-description-block">
+                  <p class="more-description-note">*только декстопная версия <br>
+                    **email: free@samuraijs.com <br>
+                    ***password: free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+  <div class="container footer__container">
+    <ul class="mail list-links">
+      <li>
+        <a href="mailto:dmitrymolkov28@gmail.com" class="footer__link">dmitrymolkov28@gmail.com</a>
+      </li>
+    </ul>
+
+    <ul class="numbers list-links">
+      <li>
+        <a href="tel:+375292248249" class="footer__link link-svg">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +37529&nbsp;224-82-49
+        </a>
+      </li>
+    </ul>
+
+    <ul class="social list-links">
+      <li class="social__item">
+        <a href="viber://chat?number=%2B375292248249" class="social__link" target="_blank">
+          <svg>
+            <use xlink:href="img/sprite.svg#vb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://t.me/navernoyeDima" class="social__link" target="_blank">
+          <svg>
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://wa.me/375257844941" class="social__link" target="_blank">
+          <svg>
+            <use xlink:href="img/sprite.svg#wa"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
